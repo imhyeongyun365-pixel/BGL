@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'GounBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'GowoonDodum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* header css */
+
+.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: rgb(255, 243, 134);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    max-width: 1920px;
+}
+
+/* header-left css */
+
+.header-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-left img {
+    width: 55px;
+}
+
+.header-left a:hover {
+    color: #72e231;
+}
+
+/* header-right css */
+
+.menu-list {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-list li a {
+    font-size: 20px;
+
+}
+
+/* main css */
+
+.main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 1080px;
+    background-image: url(../image/main-sec-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-sec-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;    
+    width: 100%;
+    
+
+} 
+
+
+.main-title {
+    line-height: 20px;
+    position: absolute;
+    cursor: default;
+}
+
+
+.main-title h1 {
+    color: #73bce6;
+    font-size: 60px;
+    font-family: 'GounBatang';
+
+    animation: maintitle 3s;
+}
+
+@keyframes  maintitle{
+    0% {
+        font-size: 0;
+        opacity: 0;
+    }
+
+    100% {
+        font-size: 60px;
+        opacity: 100%;
+    }
+} 
+
+.main-title p {
+
+    font-family: 'GowoonDodum';
+    font-weight: 600;
+    color: #5723e6;
+    font-size: 30px;
+
+    animation: subtitle 7s;
+}
+
+
+@keyframes subtitle {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* section 2 css */
+.peaceful-background-sec {
+    padding: 100px 0;
+    background-color: #e4e4e4;
+}
+
+.peaceful-background-sec-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 130px;
+
+    /* animation: sec-2 3s; */
+}
+
+/* @keyframes sec-2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 5;
+    }
+} */
+
+.peaceful-background-sec .left-info {
+    
+    
+}
+
+.peaceful-background-sec .left-info h2 {
+    color: #73bce6;
+    font-family: 'GounBatang';
+    font-size: 45px;
+
+    animation: sec-2_h2 2s;
+}
+
+@keyframes sec-2_h2 {
+    from {
+        transform: translateX(-3em);
+    }
+
+    to {
+        transform: translateX(0em);
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 5;
+    }
+}
+
+.peaceful-background-sec .left-info p {
+    color: #72e231;
+    font-family: 'GowoonDodum';
+    font-weight: 700;
+    font-size: 24px;
+    
+    animation: sec-2_p 4s;
+}
+
+@keyframes sec-2_p {
+    from {
+        transform: translateY(3em);
+    }
+
+    to {
+        transform: translateY(0em);
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 8;
+    }
+}
+
+.peaceful-background-sec .right-img {
+
+    width: 480px;
+    height: 540px;
+
+    background-image: url(../image/right-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: sec-2_img 2s;
+}
+
+@keyframes sec-2_img {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: rotate(1);
+    }
+}
+
+/* footer css */
+
+.footer {
+    margin: 0;
+    background: #252525;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;   
+    
+    padding: 50px 100px;
+}
+
+.BGL-info {
+    line-height: 1px;
+}
+
+.master_name {
+    padding-bottom: 10px;
+}
+
+.master_name p {
+    color: #A9A9A8;
+}
+
+.phone-number_info {
+    display: flex;
+    gap: 10px;
+}
+
+/* .phone-number_info img {
+    width: 25px;
+    height: 25px;
+} */
+
+.phone-number_info p {
+    color: #A9A9A8;
+}
+
+.address_info {
+    padding-top: 10px;
+}
+
+.address_info p {
+    color: #A9A9A8;
+}
+
+.copyright_info {
+    padding-top: 10px;
+}
+
+.copyright_info p {
+    color: #A9A9A8;
+}
+
+
